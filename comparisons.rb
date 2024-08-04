@@ -18,28 +18,35 @@ string_teachers = "4"
 numberDogs = 0
 
 # EXAMPLE: print the result of the comparison: is number_seachers greater than number_students?
-puts "Is number_teachers greater than number_students?", number_teachers > number_students
+#puts "Is number_teachers greater than number_students?", number_teachers > number_students
 # this should print: "Is numberTeachers greater than numberStudents?" false
 
 # YOU DO: print the result of the comparison: is number_teachers less than number_students?
+puts "Is number_teachers less than number_students?", number_teachers < number_students
 # this should print: true
 
 # YOU DO: print the result of the comparison: is number_teachers equal to string_teachers?
+puts "Is number_teachers equal to string teachers?", number_teachers == string_teachers
 # this should print: false
 
 # YOU DO: print the result of the comparison: is number_teachers not equal to number_students?
+puts "Is number_teachers not equal to number_students?", number_teachers != number_students
 # this should print: true
 
 # YOU DO: print the result of the comparison: is number_students greater than or equal to 20?
+puts "Is number_students greater than or equal to 20?", number_students >= 20
 # this should print: true
 
 # YOU DO: print the result of the comparison: is number_students greater than or equal to 21?
+puts "Is number_students greater than or equal to 21?", number_students >= 21
 # this should print: false
 
 # YOU DO: print the result of the comparison: is number_students less than or equal to 20?
+puts "Is number_students less than or equal to 20?", number_students <= 20
 # this should print: true
 
 # YOU DO: print the result of the comparison: is number_students less than or equal to 21?
+puts "Is number_students less than or equal to 21?", number_students <= 21
 # this should print: true
 
 
@@ -52,36 +59,41 @@ puts "Is number_teachers greater than number_students?", number_teachers > numbe
 # Be as technically precise as possible, but don't just copy and paste a definition from the readings.
 # Make sure YOU can explain it that way!
 
-puts 4 < 9
-#YOU DO: Explain.
+# puts 4 < 9
+# #YOU DO: Explain.
+#Compares integers 4 and 9 and if 4 is less than 9. This should be true
 
-books = 3
-puts 4 < books
-# YOU DO: Explain.
+#  books = 3
+#  puts 4 < books
+# # YOU DO: Explain.
+#Compares the integer 4 with the value of the variable books which is 3. Asks is 4 less than 3. This should be false
 
-friends = 6
-siblings = 2
-puts friends > siblings
+# friends = 6
+# siblings = 2
+# puts friends > siblings
 # YOU DO: Explain.
+#Compares the number of friends to number of siblings. Asks if the number of friends is greater than the number of siblings. 
+#This should be true. 
 
-attendees = 9
-meals = 8
-puts attendees != meals
+# attendees = 9
+# meals = 8
+# puts attendees != meals
 # YOU DO: Explain.
+#Compares the number of attendees to the number of meals. Asks if attendees does not equal meals. This should be true. 
 
 
 #-------------------
 # PART 3: Logical Operators
 #-------------------
 
-is_hungry = true
-finished_homework = false
+# is_hungry = true
+# finished_homework = false
 
-# EXAMPLE:
-# Determine if the user is hungry and has completed their homework
-puts is_hungry && finished_homework
-# Determine if the user is hungry or has completed their homework
-puts is_hungry || finished_homework
+# # EXAMPLE:
+# # Determine if the user is hungry and has completed their homework
+# puts is_hungry && finished_homework
+# # Determine if the user is hungry or has completed their homework
+# puts is_hungry || finished_homework
 
 loves_to_play = true
 loves_dog_park = false
@@ -90,16 +102,18 @@ age = 1
 
 # YOU DO:
 # Determine if the dog loves to play and loves treats
-
+puts loves_to_play && loves_treats
 
 # Determine if the dog loves to play and loves the dog park
-
+puts loves_to_play && loves_dog_park
 
 # Determine if the dog loves to play or loves the dog park
-
+puts loves_to_play || loves_dog_park
 
 # Determine if the dog loves to play and is a puppy
 # Assume that a dog is a puppy if it is less than 2 years old.
+puts loves_to_play && age <2
 
 # What did your final line of code evaluate to? Why do you think that is? Explain.
-# ANSWER:
+# ANSWER: My final line of code came back true because it asked in the dog loves to play and is less than two years old. 
+#Since the answer was yes to both of these questions it came back true.
